@@ -6,7 +6,7 @@
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/authProvider/authProvider.iml" filepath="$PROJECT_DIR$/authProvider/authProvider.iml" />
       <module fileurl="file://$PROJECT_DIR$/libPresenter/libPresenter.iml" filepath="$PROJECT_DIR$/libPresenter/libPresenter.iml" />
+      <module fileurl="file://$PROJECT_DIR$/libhellojni/libhellojni.iml" filepath="$PROJECT_DIR$/libhellojni/libhellojni.iml" />
     </modules>
   </component>
 </project>
-

@@ -22,7 +22,6 @@ import android.widget.Button;
 import android.widget.TextView;
 
 import com.github.baoti.android.presenter.ActivityView;
-import com.github.baoti.hellojni.HelloJni;
 import com.github.baoti.pioneer.AppMain;
 import com.github.baoti.pioneer.R;
 import com.github.baoti.pioneer.ui.Navigator;
@@ -69,7 +68,7 @@ public class SplashActivity extends ActivityView<ISplashView, SplashPresenter> i
 
         AppMain.globalGraph().plus(new SplashModule()).inject(this);
 
-        helloJni.setText(HelloJni.stringFromJNI());
+//        helloJni.setText(HelloJni.stringFromJNI());
     }
 
     @OnCheckedChanged(R.id.cb_retain)

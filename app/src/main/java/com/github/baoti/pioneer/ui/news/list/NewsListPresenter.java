@@ -45,6 +45,8 @@ public class NewsListPresenter extends PagePresenter<INewsListView, News> {
         setInitialResInteractor(newsInteractor.pageNews(CHANNEL, FIRST_PAGE, PAGE_SIZE));
     }
 
+
+    //根据查找的关键字来刷新列表
     public void refreshWithKeyword(String keyword) {
         refresh(newsInteractor.pageNews(CHANNEL, keyword, FIRST_PAGE, PAGE_SIZE));
     }

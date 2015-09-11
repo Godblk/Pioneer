@@ -83,6 +83,7 @@ public class NewsListFragment extends PageFragment<INewsListView, News> implemen
         }
     }
 
+    //在NewsListFragment加入mainactivity的回退栈时就已经调用了该方法
     public void enableInitialResources() {
         enableInitialResources = true;
         if (getPresenter() != null) {

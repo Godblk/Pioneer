@@ -82,6 +82,7 @@ public class PagePresenter<V extends IPageView<E>, E> extends Presenter<V>
     public void loadInitialResources() {
         if (initialResInteractor != null) {
             refresh(initialResInteractor);
+
         } else {
             if (hasView()) {
                 getView().disableSwipeRefreshing();
