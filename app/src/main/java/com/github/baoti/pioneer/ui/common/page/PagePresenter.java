@@ -81,6 +81,9 @@ public class PagePresenter<V extends IPageView<E>, E> extends Presenter<V>
 
     public void loadInitialResources() {
         if (initialResInteractor != null) {
+            if (!getView().isUsable())
+                return;
+
             refresh(initialResInteractor);
 
         } else {
@@ -99,7 +102,7 @@ public class PagePresenter<V extends IPageView<E>, E> extends Presenter<V>
         pageTask.loadFirstPage(interactor);
         refreshInteractor = interactor;
         if (hasView()) {
-            getView().enableSwipeRefreshing();
+            getView().disableSwipeRefreshing();
         }
     }
 

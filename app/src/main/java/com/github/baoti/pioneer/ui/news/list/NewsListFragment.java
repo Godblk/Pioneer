@@ -113,4 +113,9 @@ public class NewsListFragment extends PageFragment<INewsListView, News> implemen
             onItemClickListener.onViewHolderClick(viewHolder, item);
         }
     }
+
+    @Override
+    public boolean isUsable() {
+        return  getActivity()!=null;
+    }
 }

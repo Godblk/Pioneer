@@ -35,4 +35,6 @@ public interface IPageView<E> extends IView {
     void enableSwipeRefreshing();
 
     void disableSwipeRefreshing();
+
+    boolean  isUsable();
 }

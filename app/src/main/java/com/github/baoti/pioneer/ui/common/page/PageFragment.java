@@ -108,8 +108,9 @@ public abstract class PageFragment<V extends IPageView<E>, E> extends FragmentVi
     }
 
     private void updateSwipeRefreshLayoutEnabled() {
-        boolean enableRefresh = layoutManager.findFirstCompletelyVisibleItemPosition() == 0;
-        swipeRefreshLayout.setEnabled(swipeRefreshEnabled && enableRefresh);
+//        boolean enableRefresh = layoutManager.findFirstCompletelyVisibleItemPosition() == 0;
+//        swipeRefreshLayout.setEnabled(swipeRefreshEnabled && enableRefresh);
+        swipeRefreshLayout.setEnabled(swipeRefreshEnabled );
     }
 
     @Override
@@ -154,4 +155,6 @@ public abstract class PageFragment<V extends IPageView<E>, E> extends FragmentVi
         swipeRefreshEnabled = false;
         updateSwipeRefreshLayoutEnabled();
     }
+
+
 }
